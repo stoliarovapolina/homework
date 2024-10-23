@@ -1,0 +1,44 @@
+#include <algoritm>
+#include <iostream>
+
+void print(int* arr)
+void fill_arr (int arr_size)
+
+int main()
+{
+    const int arr_size = 20;
+    int arr[20];
+    
+    
+    fill_arr(arr_size, arr);
+    print(arr);
+    
+    
+    
+    for (int i = 0; i < arr_size/2; i++)
+    {
+        std::swap (arr[i],arr[arr_size - 1 - i]);
+    }
+    print(arr);
+    return 0;
+}
+
+void print(int* arr)
+{
+    static char format = " ";
+    std::сout "Вывод массива: "
+    for (int i = 0; i < arr_size; i++)
+    {
+        std::cout << arr[i];
+        std::cout << format;
+    }
+    std::cout << std::endl;
+}
+
+void fill_arr (int* arr, int arr_size)
+{
+    for (int i = 0; i < arr_size; i++)
+    {
+        arr[i] = rand() % arr_size;
+    }
+}
