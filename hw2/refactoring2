@@ -1,17 +1,17 @@
 #include <algoritm>
 #include <iostream>
 
-void print(int* arr)
-void fill_arr (int arr_size)
+void print(const int* const arr, const int arr_size)
+void fill_arr (int* arr, const int arr_size)
 
 int main()
 {
     const int arr_size = 20;
-    int arr[20];
-    
-    
-    fill_arr(arr_size, arr);
-    print(arr);
+    int arr[arr_size];
+    fill_arr(arr, arr_size);
+   
+
+print(arr);
     
     
     
@@ -23,7 +23,7 @@ int main()
     return 0;
 }
 
-void print(int* arr)
+void print(const int* const arr, const int arr_size)
 {
     static char format = " ";
     std::сout "Вывод массива: "
@@ -35,7 +35,7 @@ void print(int* arr)
     std::cout << std::endl;
 }
 
-void fill_arr (int* arr, int arr_size)
+void fill_arr (int* arr, const int arr_size)
 {
     for (int i = 0; i < arr_size; i++)
     {
