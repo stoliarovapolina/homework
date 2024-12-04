@@ -1,5 +1,3 @@
-#include <conio.h>
-
 #include "gen.hpp"
 #include "io.hpp"
 #include "sort.hpp"
@@ -17,10 +15,7 @@ int main() {
     polinom::print("Исходный массив: ", x, size);
 
     polinom::get_interesting(x, size);
-	polinom::print("Отсортированный массив: ", x, size);
-
-    polinom::print("Нажмите любую кнопку");
-    _getch();
+    polinom::print("Отсортированный массив: ", x, size);
 
     delete [] x;
 

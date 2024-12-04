@@ -1,0 +1,17 @@
+#include <iostream>
+int main() {
+    int size;
+    std::cout << "Введите размер массива" << std::endl;
+    std::cin >> size;
+    int *arr = new int [size];
+    for (int i=0; i < size; i++) {
+        arr[i] = std::rand() % 100;
+    }
+    std::cout << "Массив" << std::endl;
+    const char format = ' ';
+    for (int i = 0; i < size; i++) 
+        std::cout << arr[i] << format;
+    }
+    delete[] arr;
+    return 0;
+}
