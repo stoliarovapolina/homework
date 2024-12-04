@@ -1,6 +1,5 @@
-#ifndef  SORT_HPP_
-#define SORT_HPP_
+#pragma once
 
-void get_interesting(int* x, const int size);
-
-#endif  
+namespace polinom {
+    void get_interesting(int* x, const int size);
+}
