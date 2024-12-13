@@ -5,16 +5,16 @@
 #include "menu_functions.hpp"
 
 const polinom::MenuItem polinom::STUDY_DUB = {
-    "1 - Хочу \"Дубровского\"!", polinom::study_dub, &polinom::STUDY_SUMM
+    "1 - Хочу \"Дубровского\"!", polinom::study_dub, &polinom::STUDY_PUSHKIN
 };
 const polinom::MenuItem polinom::STUDY_ONEGIN = {
-    "2 - Хочу \"Евгения Онегина\"!", polinom::study_onegin, &polinom::STUDY_SUMM
+    "2 - Хочу \"Евгения Онегина\"!", polinom::study_onegin, &polinom::STUDY_PUSHKIN
 };
 const polinom::MenuItem polinom::STUDY_EVENING = {
-    "3 - Хочу \"Зимний вечер\"!", polinom::study_evening, &polinom::STUDY_SUMM
+    "3 - Хочу \"Зимний вечер\"!", polinom::study_evening, &polinom::STUDY_PUSHKIN
 };
 const polinom::MenuItem polinom::STUDY_BACK = {
-    "0 - Выйти в главное меню", polinom::study_go_back, &polinom::STUDY_SUMM
+    "0 - Выйти в главное меню", polinom::study_go_back, &polinom::STUDY_PUSHKIN
 };
 
 namespace {
@@ -27,14 +27,14 @@ namespace {
     const int study_size2 = sizeof(study_childrens) / sizeof(study_childrens[0]);
 }
 
-const polinom::MenuItem polinom::STUDY_SUMM = {
-    "1 - Читать Пушкина!", polinom::study_summ, &polinom::STUDY, study_childrens,study_size2
+const polinom::MenuItem polinom::STUDY_PUSHKIN = {
+    "1 - Читать Пушкина!", polinom::show_menu, &polinom::STUDY, study_childrens,study_size2
 };
-const polinom::MenuItem polinom::STUDY_SUBSTRACT = {
-    "2 - Читать Лермонтова!", polinom::study_substract, &polinom::STUDY
+const polinom::MenuItem polinom::STUDY_LERMONTOV = {
+    "2 - Читать Лермонтова!", polinom::study_lermontov, &polinom::STUDY
 };
-const polinom::MenuItem polinom::STUDY_MULTIPLY = {
-    "3 - Читать Крылова!", polinom::study_multiply, &polinom::STUDY
+const polinom::MenuItem polinom::STUDY_KRYLOV = {
+    "3 - Читать Крылова!", polinom::study_krylov, &polinom::STUDY
 };
 const polinom::MenuItem polinom::STUDY_GO_BACK = {
     "0 - Выйти в главное меню", polinom::study_go_back, &polinom::STUDY
@@ -43,9 +43,9 @@ const polinom::MenuItem polinom::STUDY_GO_BACK = {
 namespace {
     const polinom::MenuItem* const study_children[] = {
         &polinom::STUDY_GO_BACK,
-        &polinom::STUDY_SUMM,
-        &polinom::STUDY_SUBSTRACT,
-        &polinom::STUDY_MULTIPLY,
+        &polinom::STUDY_PUSHKIN,
+        &polinom::STUDY_LERMONTOV,
+        &polinom::STUDY_KRYLOV,
     };
     const int study_size = sizeof(study_children) / sizeof(study_children[0]);
 }

@@ -8,10 +8,9 @@ namespace polinom {
     extern const MenuItem STUDY;
     extern const MenuItem EXIT;
 
-    extern const MenuItem STUDY_SUMM;
-    extern const MenuItem STUDY_SUBSTRACT;
-    extern const MenuItem STUDY_MULTIPLY;
-    extern const MenuItem STUDY_DIVIDE;
+    extern const MenuItem STUDY_PUSHKIN;
+    extern const MenuItem STUDY_LERMONTOV;
+    extern const MenuItem STUDY_KRYLOV;
     extern const MenuItem STUDY_GO_BACK;
 
     extern const MenuItem STUDY_BACK;

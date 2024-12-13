@@ -7,7 +7,8 @@
 
 int main() {
     std::setlocale(LC_ALL, "");
-
+    std::cout << "Обучайка приветствует тебя, мой юный ученик!" << std::endl;
+    
     const polinom::MenuItem* current = &polinom::MAIN;
     do {
         current = current->func(current);

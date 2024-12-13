@@ -4,7 +4,7 @@
 #include <iostream>
 
 const polinom::MenuItem* polinom::show_menu(const MenuItem* current) {
-    std::cout << "Обучайка приветствует тебя, мой юный ученик!" << std::endl;
+    
     for (int i = 1; i < current->children_count; i++) {
         std::cout << current->children[i]->title << std::endl;
     }
@@ -18,7 +18,7 @@ const polinom::MenuItem* polinom::show_menu(const MenuItem* current) {
 
     return current->children[user_input];
 }
-const polinom::MenuItem* polinom::study_summ(const MenuItem* current) {
+const polinom::MenuItem* polinom::study_lit(const MenuItem* current) {
     std::cout << "Обучайка приветствует тебя, мой юный ученик!" << std::endl;
     for (int i = 1; i < current->children_count; i++) {
         std::cout << current->children[i]->title << std::endl;
@@ -40,19 +40,15 @@ const polinom::MenuItem* polinom::exit(const MenuItem* current) {
 
 
 
-const polinom::MenuItem* polinom::study_substract(const MenuItem* current) {
+
+
+const polinom::MenuItem* polinom::study_lermontov(const MenuItem* current) {
     // TODO
     std::cout << current->title << std::endl << std::endl;
     return current->parent;
 }
 
-const polinom::MenuItem* polinom::study_multiply(const MenuItem* current) {
-    // TODO
-    std::cout << current->title << std::endl << std::endl;
-    return current->parent;
-}
-
-const polinom::MenuItem* polinom::study_divide(const MenuItem* current) {
+const polinom::MenuItem* polinom::study_krylov(const MenuItem* current) {
     // TODO
     std::cout << current->title << std::endl << std::endl;
     return current->parent;
@@ -79,3 +75,4 @@ const polinom::MenuItem* polinom::study_evening(const MenuItem* current) {
     std::cout << current->title << std::endl << std::endl;
     return current->parent;
 }
+

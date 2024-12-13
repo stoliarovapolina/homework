@@ -1,4 +1,3 @@
-#pragma once
 
 #include "menu.hpp"
 
@@ -7,10 +6,9 @@ namespace polinom {
 
     extern const MenuItem* exit(const MenuItem* current);
 
-    extern const MenuItem* study_summ(const MenuItem* current);
-    extern const MenuItem* study_substract(const MenuItem* current);
-    extern const MenuItem* study_multiply(const MenuItem* current);
-    extern const MenuItem* study_divide(const MenuItem* current);
+    extern const MenuItem* study_lit(const MenuItem* current);
+    extern const MenuItem* study_lermontov(const MenuItem* current);
+    extern const MenuItem* study_krylov(const MenuItem* current);
     extern const MenuItem* study_go_back(const MenuItem* current);
 
     extern const MenuItem* study_dub(const MenuItem* current);
