@@ -17,7 +17,7 @@ int main() {
     polinom::get_interesting(x, size);
     polinom::print("Отсортированный массив: ", x, size);
 
-    delete [] x;
+    delete x;
 
     return 0;
 }

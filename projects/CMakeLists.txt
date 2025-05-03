@@ -7,5 +7,6 @@ add_subdirectory(lib/googletest)
 
 add_subdirectory(sort)
 add_subdirectory(obuchaika)
-add_subdirectory(long_number)
+#add_subdirectory(long_number)
 add_subdirectory(unit_test_sort)
+add_subdirectory(vector)
