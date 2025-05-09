@@ -17,11 +17,7 @@ Vector<T>::~Vector() {
 
 template<typename T>
 std::size_t Vector<T>::get_size() const noexcept {
-	std::size_t count = 0;
-    while (count < capacity && arr[count] != T()) {
-        ++count;
-    }
-    return count;
+    return size;
 }
 
 template<typename T>
